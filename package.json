@@ -1,5 +1,5 @@
 {
-  "name": "electron-react-boilerplate",
+  "name": "ElectronReactExcel",
   "productName": "ElectronReact",
   "version": "0.10.0",
   "description": "Electron application boilerplate based on React, React Router, Webpack, React Hot Loader for rapid application development",
@@ -68,16 +68,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chentsulin/electron-react-boilerplate.git"
+    "url": "git+https://github.com/ChrisHuie/ElectronReactExcel"
   },
   "author": {
-    "name": "C. T. Lin",
-    "email": "chentsulin@gmail.com",
-    "url": "https://github.com/chentsulin"
+    "name": "Chris Huie",
+    "email": "christopher.huie@galvanize.com",
+    "url": "https://github.com/ChrisHuie"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chentsulin/electron-react-boilerplate/issues"
+    "url": "https://github.com/ChrisHuie/ElectronReactExcel"
   },
   "keywords": [
     "electron",
@@ -88,7 +88,7 @@
     "webpack",
     "react-hot"
   ],
-  "homepage": "https://github.com/chentsulin/electron-react-boilerplate#readme",
+  "homepage": "https://github.com/ChrisHuie/ElectronReactExcel#readme",
   "devDependencies": {
     "asar": "^0.12.3",
     "babel-core": "^6.18.0",
