@@ -22,13 +22,33 @@ const data = [
 
 var Excel = React.createClass ({
   displayName: 'Excel',
+  propTypes: {
+    headers: React.PropTypes.arrayOf(
+      React.PropTypes.string
+    ),
+    initialData: React.PropTypes.arrayOf(
+      React.PropTypes.arrayOf(
+        React.PropTypes.string
+      )
+    ),
+  },
   getInitialState: function () {
     return {data: this.props.initialData};
+  },
+  _sort: function (e) {
+    var column = e.target.cellIndex;
+    var data = Array.from(this.state.data);
+    data.sort(function(a, b) {
+      return a[column] > b[column] ? 1 : -1;
+    });
+    this.setState({
+      data: data
+    })
   },
   render: function () {
     return (
       React.DOM.table(null,
-        React.DOM.thead(null,
+        React.DOM.thead({onClick: this._sort},
           React.DOM.tr(null,
             this.props.headers.map(function(title, idx){
               return React.DOM.th({key: idx},title);
